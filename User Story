@@ -1,7 +1,8 @@
 Like a user I want to delete my pet and create a new one with its own photo.
 
 Pre-condition:
-User is authorized with 'user@mail.com' login, and '3333' password.
+1. User is authorized with 'user@mail.com' login, and '3333' password;
+2. There is a created pet in the user's profile.
 
 Step to reproduce:
 1. Send POST/login request with valid user's data;
