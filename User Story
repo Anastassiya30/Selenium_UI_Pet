@@ -1,0 +1,21 @@
+Like a user I want to delete my pet and create a new one with its own photo.
+
+Pre-condition:
+User is authorized with 'user@mail.com' login, and '3333' password.
+
+Step to reproduce:
+1. Send POST/login request with valid user's data;
+2. Send DELETE/pet request by correct pet's id;
+3. Send POST/pet request with filling request body to create a new pet;
+4. Send POST/pet/image request to upload a photo of the pet by correct id and valid picture.
+
+Expected result:
+1. Token is taken;
+2. Pet's id is taken;
+3. Pet succesfully deleted;
+4. New pet succesfully created;
+5. Photo of a new pet succesfully saved.
+
+Comment:
+1. In response of DELETE/pet request 'Pet record has been removed' message is getting.
+2. In response of POST/pet request a new pet with correct data and uploading photo from step 4 is getting.
